@@ -1,22 +1,19 @@
-## NAME: SURAJ SHARMA
+### NAME : SURAJ SHARMA
+### REF NO. : 212224050052
+# EXP NO. 3:IMPLEMENTATION OF HALF ADDER AND HALF SUBTRACTOR
 
-## RegisterNumber: 212224050052
 
-# HALF_ADDER_SUBTRACTOR
-
-Implementation-of-Half-Adder-and-Half Subtractor-circuit
-
-**AIM:**
+# AIM:
 
 To design a half adder and half subtractor circuit and verify its truth table in Quartus using Verilog programming.
 
-**Equipments Required:**
+# Equipments Required:
 
 Hardware – PCs, Cyclone II , USB flasher 
 
 Software – Quartus prime Theory Adders are digital circuits that carry out the addition of numbers.
 
-**Half Adder**
+# Half Adder:
 
 Half adder is a combinational circuit that performs simple addition of two binary numbers. The input variables designate the augend and addend bits; the output variables produce the sum and carry. It is necessary to specify two output variables because the result may consist of two binary digits.
 
@@ -26,7 +23,7 @@ Sum = A’B+AB’ =A ⊕ B Carry = AB
 
 Figure -01 HALF ADDER
 
-**Half Subtractor**
+# Half Subtractor :
 
 The half-subtractor is a combinational circuit which is used to perform subtraction of two bits. It has two inputs, X (minuend) and Y (subtrahend) and two outputs D (difference) and B (borrow). To perform x - y, we have to check the relative magnitudes of x and y. If x ;;, y, we have three possibilities: 0 - 0 = 0, 1 - 0 = 1, and 1 - I = 0. The result is called the difference bit. If x < y, we have 0 - I, and it is necessary to borrow a 1 from the next higher stage. The I borrowed from the next higher stage adds 2 to the minuend bit, just as in the decimal system a borrow adds 10 to a minuend digit. With the minuend equal to 2, the difference becomes 2 - I = 1. The half-subtractor needs two outputs. One output generates the difference and will be designated by the symbol D. The second output, designated B for borrow, generates the binary signal that informs the next stage that a I has been borrowed. 
 
@@ -37,20 +34,11 @@ Borrow = A’B
 
 Figure -02 HALF Subtractor
 
-**Truthtable**
+# Truthtable :
 
-**HALF ADDER**
+![WhatsApp Image 2024-11-14 at 14 02 06_a4ec18e7](https://github.com/user-attachments/assets/e47b4e4f-1312-4da2-909c-ba864ffb6389)
 
-<img width="598" alt="image" src="https://github.com/gauthamkrishna7/HALF_ADDER_SUBTRACTOR/assets/141175025/ee5ace6a-5e24-484b-980e-8cd9bb768c99">
-
-
-**HALF SUBTRACTOR**
-
-<img width="598" alt="image" src="https://github.com/gauthamkrishna7/HALF_ADDER_SUBTRACTOR/assets/141175025/a3b9c6b2-f803-4480-ac4d-3f6e1de988a3">
-
-
-
-**Procedure**
+# Procedure :
 
 1.	Type the program in Quartus software.
 
@@ -63,39 +51,20 @@ Figure -02 HALF Subtractor
 5.	For different input combinations generate the timing diagram.
 
 
-**Program:**
-```
-/* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
+# Program:
+
+![WhatsApp Image 2024-11-14 at 13 54 07_9e6cb7c7](https://github.com/user-attachments/assets/d2459bb1-cb99-48d7-be81-b4c108ee45d9)
 
 
-*/
-```
+# RTL Schematic :
 
-```py
-module half_add(a,b,sum,carry,D,Bo);
-input a,b;
-output sum,carry,D,Bo; // Outputs sum and carry for half adder:Outputs difference D,Borrow Bo for half subtractor
-xor(sum,a,b);
-and(carry,a,b);
-wire abar;
-not(abar,a);
-xor(D,a,b);
-and(Bo,abar,b);
-endmodule
-```
+![WhatsApp Image 2024-11-14 at 13 54 07_8c189040](https://github.com/user-attachments/assets/14dbe29d-bce9-4248-8576-b3a79d3186f2)
 
-**RTL Schematic**
+# Output/TIMING Waveform
 
-![image](https://github.com/gauthamkrishna7/HALF_ADDER_SUBTRACTOR/assets/141175025/8bcb44cf-772e-46e9-974a-888c998df9a7)
+![WhatsApp Image 2024-11-14 at 13 54 07_2f9f904d](https://github.com/user-attachments/assets/a7acaed1-a8e2-4370-8a7d-e4e392250944)
 
 
-**Output/TIMING Waveform**
+# Result:
 
-![image](https://github.com/gauthamkrishna7/HALF_ADDER_SUBTRACTOR/assets/141175025/f849f9b9-439f-4937-9ea7-920926b8e665)
-
-
-**Result:**
-
-The code is excecuted successfully.
-
-
+Designed a half adder and half subtractor circuit and verified its truth table in Quartus using Verilog programming.
